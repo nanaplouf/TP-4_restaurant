@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+*  {
+    /* Inclut le padding et la bordure dans la largeur et la hauteur de l'élément.
+      Cela simplifie le calcul des tailles et évite les débordements inattendus. */
+    box-sizing: border-box;
+    /* Aligne les éléments sur la ligne de base du texte environnant, pour un rendu plus cohérent. */
+    vertical-align: baseline;
+    margin: 0 auto; 
+}
+
+.col_1 {width: 8.333333%;}
+.col_2 {width: 16.666666%;}
+.col_3 {width: 25%;}
+.col_4 {width: 33.333333%;}
+.col_5 {width: 41.666666%;}
+.col_6 {width: 50%;}
+.col_7 {width: 58.333333%;}
+.col_8 {width: 66.666666%;}
+.col_9 {width: 75%;}
+.col_10 {width: 83.333333%;}
+.col_11 {width:91.666666%;}
+.col_12 {width: 100%;}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h1, h2, h3, p, a {
+    font-family: 'Caveat Brush', cursive;
+    text-align: center;
+}
+.trait{
+    width: 140px;
+    height: 8px;
+    background-color: #e53f6f;
+    border: 0;
+    margin-bottom: 50px;
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-left: 0;
+}
+.navbar a{
+    color: #e53f6f;
+    font-size: 30px;
+}
+
+header{
+    background: url("../img/planches.jpg");
+    height: 600px;
+}
+
+.licorne{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.texteRose {
+    color: #e53f6f;
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+
+.padding {
+    padding: 2%;
+}
+
+main img{
+    border-radius: 10%;
+    box-shadow: 10px 10px rgba(0, 0, 255, .2);
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.imgMoules{
+    width: 50%;
+}
+
+footer{
+    background-image: url("../img/motif.jpg");
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+i{
+    color:  #e53f6f;
+    padding: 20px;
+}
+
+/*------Responsive---------*/
+
+/*entre 0px et 768px tu auras ce style :*/
+@media screen and (max-width:768px){
+    .col_6{
+        width: 100%;
+    }
+    .col_4{
+        width: 100%;
+    }
+    .imgMoules{
+        width: 80%;
+    }
+    .licorne{
+        width: 80%;
+    }
+    
+}
